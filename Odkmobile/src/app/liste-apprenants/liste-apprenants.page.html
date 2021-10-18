@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listeApprenants</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/listeApprenants" text="bienvenue"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let apprenant of apprenants[0]">
+    <ion-item>{{ apprenant.nom + " " + apprenant.prenom }}</ion-item>
+  </ion-card>
+</ion-content>

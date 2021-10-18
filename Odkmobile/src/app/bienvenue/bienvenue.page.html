@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>bienvenue</ion-title>
+     <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text="login page"></ion-back-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>{{result.nom + '  '+ result.prenom}}</ion-item>
+  <ion-item>{{heure|date: 'HH-mm'}}</ion-item>
+</ion-content>

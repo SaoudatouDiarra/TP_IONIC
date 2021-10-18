@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Odkmobile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Odkmobile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <form #data="ngForm" (ngSubmit)="setLogin(data)">
+    <ion-item >
+      <ion-label color="black">Login</ion-label>
+      <ion-input color="black" name="login" ngModel type="text" placeholder="Login"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="black">Mot de passe</ion-label>
+      <ion-input color="black" ngModel name="password" type="password" placeholder="Mot de passe"></ion-input>
+    </ion-item>
+    <ion-button type="submit">Connexion</ion-button>
+  </form>
+    <div id="container">
+    <strong>Odkmobile</strong>
+
+  </div>
+
+</ion-content>
